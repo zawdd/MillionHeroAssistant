@@ -24,7 +24,8 @@ from config import image_compress_level
 from config import prefer
 from config import summary_sentence_count
 from config import text_summary
-from core.android import analyze_current_screen_text, save_screen
+from core.android import analyze_current_screen_text
+from core.windows import analyze_current_screen_text as windows_screen_text
 from core.baiduzhidao import zhidao_search
 from core.ocr.baiduocr import get_text_from_image as bai_get_text
 from core.ocr.hanwanocr import get_text_from_image as han_get_text
@@ -70,7 +71,7 @@ def main():
     timeout = args.timeout
 
     start = time.time()
-    text_binary = analyze_current_screen_text(
+    text_binary = windows_screen_text(
         directory=data_directory,
         compress_level=image_compress_level[0]
     )
@@ -105,9 +106,7 @@ def main():
 
     end = time.time()
     print("use {0} 秒".format(end - start))
-    save_screen(
-        directory=data_directory
-    )
+
 
 if __name__ == "__main__":
     main()

@@ -12,9 +12,9 @@ image_compress_level = (0, 1, 2)
 hanwan_appcode = "714501eede0b4ac9a75a11af64b3b4d7"
 
 ### baidu orc
-app_id = "10661627"
-app_key = "h5xcL0m4TB8fiiFWoysn7uxt"
-app_secret = " HGA1cgXzz80douKQUpII7K77TYWSGcfW"
+app_id = "10677165"
+app_key = "4MyhoDN4KHK6x7PrZtnuodzH"
+app_secret = " tqc6UyQcOAm8LTenNM1M5kAGOtrYfcXB "
 
 ### ocr.space 
 api_key = "6c851da45688957"
