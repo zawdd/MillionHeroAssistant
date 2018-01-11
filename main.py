@@ -20,6 +20,8 @@ from config import app_secret
 from config import data_directory
 from config import image_compress_level
 from core.android import analyze_current_screen_text, save_screen
+from core.windows import analyze_current_screen_text as windows_screen_text
+
 from core.nearby import calculate_relation
 from core.nlp.word_analyze import analyze_keyword_from_question
 from core.ocr.baiduocr import get_text_from_image as bai_get_text
@@ -65,7 +67,7 @@ def main():
 
     def __inner_job():
         start = time.time()
-        text_binary = analyze_current_screen_text(
+        text_binary = windows_screen_text(
             directory=data_directory,
             compress_level=image_compress_level[0]
         )

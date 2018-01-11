@@ -11,6 +11,6 @@ image_compress_level = (1, 1, 2)
 api_version = (0, 1)
 
 ## 设置baidu ocr
-app_id = "10661627"
-app_key = "h5xcL0m4TB8fiiFWoysn7uxt"
-app_secret = "HGA1cgXzz80douKQUpII7K77TYWSGcfW"
+app_id = "10677165"
+app_key = "4MyhoDN4KHK6x7PrZtnuodzH"
+app_secret = " tqc6UyQcOAm8LTenNM1M5kAGOtrYfcXB "
