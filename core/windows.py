@@ -6,8 +6,10 @@ from PIL import Image
 import os
 
 g_width = 800
-"""g_height = 800"""
-g_height = 1000
+# 冲顶大会, 知识达人
+#g_height = 800
+g_height = 900
+#g_height = 1000
 g_x = 120
 g_y = 300 
 
