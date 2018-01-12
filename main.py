@@ -10,6 +10,7 @@ import time
 from argparse import ArgumentParser
 
 import operator
+import webbrowser 
 from functools import partial
 from terminaltables import SingleTable
 
@@ -27,6 +28,8 @@ from core.nlp.word_analyze import analyze_keyword_from_question
 from core.ocr.baiduocr import get_text_from_image as bai_get_text
 from core.utils import save_question_answers_to_file, number_normalize
 
+# chrome_path = 'C:\Program Files (x86)\Google\Chrome\Application\chrome.exe %s'
+chrome_path = 'open -a /Applications/Google\ Chrome.app %s'
 
 def parse_args():
     parser = ArgumentParser(description="Million Hero Assistant")
@@ -79,6 +82,7 @@ def main():
             return
 
         question, answers = parse_question_and_answer(keywords)
+        webbrowser.get(chrome_path).open("https://www.baidu.com/s?wd="+question, new=0)
         print('-' * 72)
         print(question)
         print('-' * 72)

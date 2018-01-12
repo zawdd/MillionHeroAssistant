@@ -6,9 +6,10 @@ from PIL import Image
 import os
 
 g_width = 800
-g_height = 500
-g_x = 200
-g_y = 50
+"""g_height = 800"""
+g_height = 1000
+g_x = 120
+g_y = 300 
 
 
 def analyze_current_screen_text(directory=".", compress_level=1):
